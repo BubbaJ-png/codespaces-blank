@@ -1,0 +1,1 @@
+Placeholder directory for assets (e.g., glTF, textures). Replace with real assets as needed.
