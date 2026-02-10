@@ -1,6 +1,87 @@
-html, body, #root, .app-root { height: 100%; margin: 0; }
-.app-root { display: flex; flex-direction: column; height: 100vh; }
-.canvas { flex: 1; }
-.ui { position: absolute; left: 12px; top: 12px; z-index: 10; }
-.ui button { padding: 8px 12px; font-size: 14px; }
-.ui p { margin: 8px 0 0; font-size: 13px; color: #222 }
+html, body, #root, .app-root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: #eaf5ff;
+  background: #0a1e2b;
+}
+
+.canvas {
+  flex: 1;
+}
+
+.ui {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 10;
+  width: min(380px, calc(100vw - 24px));
+  background: rgba(8, 14, 26, 0.82);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(134, 178, 205, 0.35);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.ui h1 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.ui h2 {
+  font-size: 0.9rem;
+  margin: 10px 0 8px;
+}
+
+.controls-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ui button,
+.ui select,
+.ui input {
+  background: #10283c;
+  color: #eaf5ff;
+  border: 1px solid #2f5f7e;
+  border-radius: 8px;
+}
+
+.ui button {
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ui select {
+  margin-left: 8px;
+  padding: 6px;
+}
+
+.customization {
+  margin-top: 8px;
+  display: grid;
+  gap: 6px;
+}
+
+.customization label,
+.controls-row label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.86rem;
+}
+
+.ui p {
+  margin: 10px 0 0;
+  font-size: 0.8rem;
+  color: #b9d5e7;
+}
